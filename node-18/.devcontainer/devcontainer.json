@@ -1,0 +1,22 @@
+{
+    "name": "SAP CAP docker container dev",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "NODE_ENV": "18"
+        }
+    },
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "sapse.vscode-cds",
+                "dbaeumer.vscode-eslint",
+                "humao.rest-client",
+                "qwtel.sqlite-viewer",
+                "mechatroner.rainbow-csv"
+            ]
+        }
+    },
+    "forwardPorts": [4004],
+    "remoteUser": "node"
+}
